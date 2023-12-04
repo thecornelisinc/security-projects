@@ -1,0 +1,15 @@
+{
+    "Version": "2012-10-17",
+    "Statement": [
+      {
+        "Sid": "DenyPutObjectBackupBucket",
+        "Effect": "Deny",
+        "Principal": {
+          "AWS": "INSERT_DeveloperInstanceIAMRole_ARN"
+        },
+        "Action": "s3:PutObject",
+        "Resource": "arn:aws:s3:::INSERT_BACKUP_BUCKET_NAME/*"
+      }
+    ]
+  }
+  

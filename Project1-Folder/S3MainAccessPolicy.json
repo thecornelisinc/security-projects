@@ -1,0 +1,31 @@
+{
+	"Version": "2012-10-17",
+	"Statement": [
+		{
+			"Action": [
+				"s3:ListAllMyBuckets",
+				"s3:ListBucket"
+			],
+			"Resource": "*",
+			"Effect": "Allow",
+			"Sid": "AllowS3Read"
+		},
+		{
+			"Action": [
+				"s3:PutObject"
+			],
+			"Resource": [
+				"arn:aws:s3:::data-bucket-region-account-id/log1.txt",
+				"arn:aws:s3:::data-bucket-region-account-id/log2.txt",
+
+				"arn:aws:s3:::backup-bucket-region-account-id/log1.txt",
+				"arn:aws:s3:::backup-bucket-region-account-id/log2.txt",
+				"arn:aws:s3:::backup-bucket-region-account-id/log3.txt",
+				"arn:aws:s3:::backup-bucket-region-account-id/log4.txt"
+			],
+			"Effect": "Allow",
+			"Sid": "AllowS3PutObjectToBuckets"
+		}
+	]
+}
+
