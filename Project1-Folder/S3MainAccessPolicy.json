@@ -17,6 +17,7 @@
 			"Resource": [
 				"arn:aws:s3:::data-bucket-region-account-id/log1.txt",
 				"arn:aws:s3:::data-bucket-region-account-id/log2.txt",
+				"arn:aws:s3:::data-bucket-region-account-id/log3.txt",
 
 				"arn:aws:s3:::backup-bucket-region-account-id/log1.txt",
 				"arn:aws:s3:::backup-bucket-region-account-id/log2.txt",
